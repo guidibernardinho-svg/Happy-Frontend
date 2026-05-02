@@ -1,0 +1,2 @@
+cd desktop-app
+./HappyFrontend
