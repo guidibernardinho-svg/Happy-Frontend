@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Super Mario World",
+    "system": "SNES",
+    "rom": "roms/snes/mario.sfc",
+    "core": "snes9x",
+    "emulator": "retroarch"
+  },
+  {
+    "title": "Tekken 5",
+    "system": "PS2",
+    "rom": "roms/ps2/tekken.iso",
+    "emulator": "pcsx2"
+  },
+  {
+    "title": "Crash Bandicoot",
+    "system": "PS1",
+    "rom": "roms/ps1/crash.bin",
+    "core": "pcsx_rearmed",
+    "emulator": "retroarch"
+  }
+]
