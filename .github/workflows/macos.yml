@@ -1,0 +1,32 @@
+name: macOS Build (Qt - Happy Frontend)
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.6.0'
+          host: 'mac'
+          target: 'desktop'
+
+      - name: Configure project (CMake)
+        run: cmake -S desktop-app -B build
+
+      - name: Build project
+        run: cmake --build build --config Release
+
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: happy-frontend-macos
+          path: build/
