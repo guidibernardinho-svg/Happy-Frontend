@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: happy-frontend-apk
-          path: android-app/app/build/outputs/apk/debug/*.apk
+          path: android-app/app/build/outputs/ap.apk
